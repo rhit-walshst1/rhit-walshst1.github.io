@@ -1,0 +1,92 @@
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+}
+body {
+    /*padding-left: 4em;*/
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+h1, h2, h3 {
+    line-height: 1.2em;
+}
+
+#profilePicture {
+    height: 12em;
+}
+p {
+    max-width: 50em;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "head nav" 
+                         "main main" 
+                         "foot foot";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* body > * {
+    padding-left: 4rem;
+} */
+
+body > header {
+    grid-area: head;
+    background-color: #800000;
+}
+
+body > nav {
+    grid-area: nav;
+    background-color: #808080;
+}
+
+body > nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body > nav ul li {
+    display: inline;
+}
+
+body > main {
+    grid-area: main;
+    background-color: #808080;
+}
+
+body > footer {
+    grid-area: foot;
+    background-color: #800000;
+}
+
+header, footer {
+    padding-top: var(--vertical-space);
+    padding-bottom: var(--vertical-space);
+}
+
+header h1, footer h1 {
+    margin: 0;
+}
+
+@media screen and (min-width: 25em) {
+    body {
+        grid-template-areas: "head head"
+                             "nav main"
+                             "foot foot";
+        grid-template-rows: auto 1fr auto;
+    }
+    body#portfolio ul#portfolioItems {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+body#portfolio ul#portfolioItems li {
+    flex-basis: 40%;
+    padding-right: 2%;
+}
