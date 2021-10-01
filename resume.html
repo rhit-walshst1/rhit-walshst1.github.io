@@ -12,35 +12,101 @@
 
 <body id="portfolio">
     <!-- Your content goes here -->
-    <header>
-        <h1>Sam Walsh</h1>
+    <header id="theHead">
+        <h1 class="avocado">Wam Salsh &#129361; (Click Me)</h1>
     </header>
     <nav>
-        <ul>
-            <li> <a href="index.html">About</a></li>
-            <li> <a href="portfolio.html">Portfolio</a></li>
-            <li> <a href="resume.html">Resume</a></li>
-        </ul>
+        <a href="index.html">
+            <button type="button" class="btn btn-raised nav-button">About</button>
+        </a>
+        <a href="portfolio.html">
+            <button type="button" class="btn btn-raised nav-button">Portfolio</button>
+        </a>
+        <a href="resume.html">
+            <button type="button" class="btn btn-raised nav-button">Resume</button>
+        </a>
     </nav>
-    <main id="resume">
-        <h1>Sam Walsh's Really Cool Website</h1>
-        <h2>Information about me</h2>
-        <p> I make websites. reach out; I charge $100 per website.</p>
-        <h2>Objective</h2>
-        <p> Give me a job</p>
-        <h2> GPA </h2>
-        <p> 4.0 at Rose</p>
-        <h2> Skills </h2>
-        <dl>
-            <dt> Programming all languages </dt>
-            <dt> HTML </dt>
-            <dt> Java </dt>
-            <dt> Ruby </dt>
-            <dd> XML, XSL, X(HTML)</dd>
-        </dl>
+    <main id="about">
+        <h1 style="color:rgb(72, 173, 72);display: grid; justify-content: center;">Sam Walsh</h1>
+        <div style="display: grid;justify-content: center; color: white;">
+            5500 Wabash Ave, Terre Haute, IN, CM2015
+        </div>
+        <div style="display: grid;justify-content: center; color: white;">
+            walshst1@rose-hulman.edu | swalshtn@gmail.com | (615) 970-9830
+        </div>
+        <hr>
+        <h2 class="subhead">Objective</h2>
+        <p> To obtain an innovative, educating internship in autonomous programming</p>
+        <hr>
+        <h2 class="subhead">Education</h2>
+        <div class="subhead" style="font-size:1.2em;">
+            <div><strong>ROSE-HULMAN INSTITUTE OF TECHNOLOGY</strong>, Terre Haute, IN</div>
+            <div>MAY 2024</div>
+        </div>
+        <div class="subhead">
+            <div>BACHELOR OF SCIENCE, SOFTWARE ENGINEERING & COMPUTER SCIENCE</div>
+            <div><strong>4.0</strong>/4.0 GPA</div>
+        </div>
+        <br>
+        <div class="subhead">
+            <p>MINORS: ENTREPRENEURIAL STUDIES, SUTAINABILITY, ARTIFICIAL INTELLIGENCE, AND PHILOSOPHY</p>
+        </div>
+        <p>
+            Related Courses by End of Year (2022): Introduction to Software Development, Object-Oriented Software
+            Development, Data Structures and Algorithm Analysis, Introduction to Computer Systems, Computer 
+            Architecture I, Introduction to Web Program, Programming Language Concepts, Operating Systems, Computer 
+            Vision, Computer Architecture II
+        </p>
+        <hr>
+        <div class="subhead" style="font-size:1.2em;">
+            <div><strong>FRANKLIN HIGH SCHOOL</strong>, Franklin, TN</div>
+            <div>MAY 2020</div>
+        </div>
+        <div class="subhead">
+            <div>AP DIPLOMA @ 4.00/4.00 GPA</div>
+        </div>
+        <div class="subhead">
+            <p>Related Courses: Programming and Logic I, Autonomous Vehicles I, AP Computer Science, IB Computer Science</p>
+        </div>
+        <hr>
+        <h2 class="subhead">SOFTWARE SKILLS</h2>
+        <div style="text-transform: lowercase; color:white;">
+            Coding experience (years) in <strong>Java (3)</strong>, Python (2), Javascript (1), Matlab (2), C++ (1), HTML (1), and CSS (1)
+            Specializing in Java Back-End Development and Object-Oriented Programming
+        </div>
+        <hr>
+        <h2 class="subhead">Work Experience</h2>
+        <div class="subhead" style="font-size:1.2em;">
+            <div><strong>FELLOWSHIP UNDERGRADUATE RESEARCHER</strong> WAYNE STATE UNIVERSITY</div>
+            <div>JUNE 2021 - AUG 2021</div>
+        </div>
+        <div class="subhead">
+            <div>Research on autonomous fleet robots’ energy usage and charging patterns to improve the efficiency of the 
+                robots and prolong battery life. Emphasis on sustainability and autonomous theory-crafting
+            </div>
+        </div>
+        <div class="subhead" style="font-size:1.2em;">
+            <div><strong>MATH DEPARTMENT GRADER</strong> ROSE-HULMAN</div>
+            <div>AUG 2020 - AUG 2021</div>
+        </div>
+        <div class="subhead">
+            <div>Employed for impressive performance in calculus III; grading homework assignment for Calculus I and II 
+                students while being first on-call for any other openings in calculus courses
+            </div>
+        </div>
+        <hr>
+        <h2 class="subhead">LEADERSHIP & ACTIVITIES</h2>
+        <ol style="color: white;">
+            <li><div><em>Rose-Hulman</em>: Alpha Lambda Delta Honor Society, <strong>Treasurer</strong></div></li>
+            <li><div><em>Rose-Hulman</em>: Pi Kappa Alpha Fraternity, <strong>Housing Manager</strong></div></li>
+            <li><div><em>Rose-Hulman</em>: Student Government Association, <strong>Former Senator of BSB Residence Hall</strong></div></li>
+            <li><div><em>Franklin High School</em>: Science National Honor Society, <strong>President</strong></div></li>
+            <li><div><em>Franklin High School</em>: National Honor Society, <strong>Co-President</strong></div></li>
+            <li><div><em>Franklin High School</em>: Science Olympiad, <strong>Five-year Regional and State award winner</strong></div></li>
+        </ol>
     </main>
-    <footer>
-        Staying the best in the mark-up world.
+    <footer id="theFoot">
+        Reach out @ walshst1@rose-hulman.edu
     </footer>
     <script src="scripts/main.js"></script>
 </body>

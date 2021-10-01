@@ -1,15 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap');
+
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
 }
 body {
     /*padding-left: 4em;*/
+    font-family: 'Koh Santepheap', 'Gill San', Verdana, Georgia, sans-serif;
     font-size: 18px;
     line-height: 1.5em;
+    height: 100vh;
 }
 
 h1, h2, h3 {
     line-height: 1.2em;
+    color: white;
+}
+
+.nav-button {
+    background-color: black;
+    color: white;
+    /*font-size: 3em;*/
+    width: 100%;
+    height: 5em;
+    margin: 5px 0px;
+    border-style: solid;
+    border-color: #691bc4;
+}
+
+.nav-button:hover {
+    background-color: #350d63;
 }
 
 #profilePicture {
@@ -17,6 +37,14 @@ h1, h2, h3 {
 }
 p {
     max-width: 50em;
+    color:white;
+}
+
+.subhead {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    color: white;
 }
 
 body {
@@ -24,22 +52,34 @@ body {
     grid-template-areas: "head nav" 
                          "main main" 
                          "foot foot";
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: auto 1fr auto;
 }
 
-/* body > * {
-    padding-left: 4rem;
-} */
+p img {
+    float: left;
+    margin-right: 10px;
+    height: 10em;
+}
 
 body > header {
     grid-area: head;
-    background-color: #800000;
+    background: linear-gradient(black, #292842);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 body > nav {
     grid-area: nav;
-    background-color: #808080;
+    background-color: #1d1d1d;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    grid-template-columns: 95%;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
 }
 
 body > nav ul {
@@ -53,12 +93,17 @@ body > nav ul li {
 
 body > main {
     grid-area: main;
-    background-color: #808080;
+    background-color: #292842;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 body > footer {
     grid-area: foot;
-    background-color: #800000;
+    background: linear-gradient(#292842, black);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
 }
 
 header, footer {
@@ -72,9 +117,9 @@ header h1, footer h1 {
 
 @media screen and (min-width: 25em) {
     body {
-        grid-template-areas: "head head"
+        grid-template-areas: "nav head"
                              "nav main"
-                             "foot foot";
+                             "nav foot";
         grid-template-rows: auto 1fr auto;
     }
     body#portfolio ul#portfolioItems {
@@ -89,4 +134,26 @@ header h1, footer h1 {
 body#portfolio ul#portfolioItems li {
     flex-basis: 40%;
     padding-right: 2%;
+}
+
+.avo-header {
+    background: linear-gradient(#80df7d, rgb(99, 51, 6));
+}
+
+.avo-body {
+    background: rgb(99, 51, 6);
+}
+
+.avo-footer {
+    background: linear-gradient(rgb(99, 51, 6), #80df7d);
+}
+
+.navocado {
+    background-color: rgb(0, 37, 0);
+    color: lightgreen;
+    border-color:rgb(99, 51, 6);
+}
+
+.navocado:hover {
+    background-color: seagreen;
 }
